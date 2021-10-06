@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Video </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Video explicativo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/xwkwEGFyc7o" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

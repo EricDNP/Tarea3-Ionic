@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Traductor </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Traductor de numero a letra</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Numero</ion-label>
+          <ion-input type="number" value=""></ion-input>
+        </ion-item>
+        <ion-button expand="block" color="success" style="margin-top: 10px;">Traducir</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-item style="--highlight-color-focused: none;">
+        <ion-label position="stacked">Numero en letra: </ion-label>
+        <ion-input readonly></ion-input>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

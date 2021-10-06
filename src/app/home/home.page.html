@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <ion-grid>
+    <ion-row>
+      <ion-col style="padding-bottom: 30px;">
+        <ion-img [src]="profileData.img"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card>
+    <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <b>Nombre:</b>
+        </ion-col>
+        <ion-col>
+          <b>Apellido:</b>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          {{profileData.nombre}}
+        </ion-col>
+        <ion-col>
+          {{profileData.apellido}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <b>Correo:</b>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          {{profileData.correo}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
