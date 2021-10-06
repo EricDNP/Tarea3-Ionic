@@ -16,15 +16,15 @@
       <ion-card-content>
         <ion-item>
           <ion-label position="stacked">Numero</ion-label>
-          <ion-input type="number" value=""></ion-input>
+          <ion-input type="number" #num></ion-input>
         </ion-item>
-        <ion-button expand="block" color="success" style="margin-top: 10px;">Traducir</ion-button>
+        <ion-button expand="block" color="success" style="margin-top: 10px;" (click)="pressButton(num.value)">Traducir</ion-button>
       </ion-card-content>
     </ion-card>
     <ion-card>
       <ion-item style="--highlight-color-focused: none;">
         <ion-label position="stacked">Numero en letra: </ion-label>
-        <ion-input readonly></ion-input>
+        <ion-input readonly>{{letterNum}}</ion-input>
       </ion-item>
     </ion-card>
   </div>
