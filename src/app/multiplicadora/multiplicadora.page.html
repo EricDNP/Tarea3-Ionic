@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="primary">
-  <div id="container">
+  <!-- <div id="container"> -->
     <ion-card>
       <ion-card-header>
         <ion-card-title>Multiplicadora</ion-card-title>
@@ -28,10 +28,10 @@
       <ion-card-content>
         <ion-list>
           <ion-item *ngFor="let multiple of multipleArray">
-            <ion-text>{{multiple.i}} + {{multiple.num}} = {{multiple.result}}</ion-text>
+            <ion-text>{{multiple.i}} * {{multiple.num}} = {{multiple.result}}</ion-text>
           </ion-item>
         </ion-list>
       </ion-card-content>
     </ion-card>
-  </div>
+  <!-- </div> -->
 </ion-content>

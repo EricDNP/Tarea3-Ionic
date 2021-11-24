@@ -204,7 +204,7 @@ export class TraductorPage implements OnInit {
     if (num[3]) {
       this.letterNum = "mil";
     }
-    if (num[2]) {
+    if (num[2] && num[2] != 0) {
       this.letterNum += this.getLetterByN(this.hundredNums, parseInt(num[2])) + " ";
     }
     if (num[1] && num[1] != 0) {

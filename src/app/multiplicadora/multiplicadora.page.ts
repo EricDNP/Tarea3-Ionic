@@ -25,6 +25,7 @@ export class MultiplicadoraPage implements OnInit {
       await alert.present();
     }
     else {
+      this.multipleArray = [];
       for (let i = 0; i < 14; i++) {
         this.multipleArray.push({
           num: num,
